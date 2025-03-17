@@ -1,0 +1,161 @@
+:root {
+  --font-color: #909090;
+  --nav-hover: #2D5F4D;
+  --button-color: #F7C35F;
+  --pure-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 36px;
+  font-size: 12px;
+  font-family: "Poppins";
+  color: var(--font-color);
+  background-color: #EDECE9;
+}
+.top .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.top .left .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.top .left .welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+}
+.top .right .mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.top .right .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.container .navbar {
+  margin: 36px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .navbar .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .navbar .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+.container .navbar .nav ul li a {
+  font-size: 1rem;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--font-color);
+  text-decoration: none;
+}
+.container .navbar .nav ul li a:hover {
+  border-bottom: 2px solid green;
+  transition: 0.5s;
+}
+.container .navbar .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.container .navbar .wrapper .shopping {
+  display: flex;
+  gap: 24px;
+}
+.container .navbar .wrapper .number {
+  color: var(--pure-white);
+}
+.container .navbar .wrapper .number #num {
+  font-size: 16px;
+  line-height: 2;
+}
+
+section.one {
+  background-image: url(images/main-slider-1-1\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 744px;
+  position: relative;
+}
+section.one .container {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center; /* Vertically center */
+  height: 100%; /* Ensure container takes full height */
+  position: relative; /* Allow absolute positioning inside */
+}
+section.one .box {
+  position: absolute;
+  top: 50%;
+  left: 0; /* Start from the left edge of the container */
+  transform: translateY(-50%); /* Vertically center */
+  padding: 20px;
+  color: var(--pure-white);
+  font-family: "Poppins";
+  width: 486px;
+}
+section.one .box h5 {
+  margin-bottom: 1rem;
+  color: var(--pure-white);
+}
+section.one .box h1 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 86px;
+}
+section.one .box p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+section.one .box button {
+  background-color: var(--button-color);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: var(--pure-white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+section.one .box button:hover {
+  background-color: #f0b731;
+}/*# sourceMappingURL=style.css.map */

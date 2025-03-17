@@ -1,0 +1,83 @@
+/* Default styles are in style.css, this file contains only responsive adjustments */
+
+/* Mobile (Up to 600px) */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    section.hero h1 {
+        font-size: 2.5rem;
+    }
+
+    section.menu .wrapper,
+    section.explore .wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .explore .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Tablet (601px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .navbar ul {
+        gap: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    section.menu .wrapper,
+    section.explore .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .box img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Large Screens (Above 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 92%;
+        margin: 0 auto;
+    }
+
+    .navbar ul {
+        gap: 5rem;
+    }
+
+    section.explore .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

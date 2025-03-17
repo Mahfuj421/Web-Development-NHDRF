@@ -1,0 +1,201 @@
+:root {
+    --hero: #E7FAFE;
+    --btncolor: #DBEEF1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// header section
+header {
+    border-bottom: 1px solid rgb(243, 239, 239);
+}
+
+.navbar-brand h1 {
+    font-family: "Lobster", serif;
+    font-size: 1.5rem;
+}
+
+.navbar-brand span {
+    color: red;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+// hero section
+#heroimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(Images/hero/baked-chicken-wings-asian-style-tomatoes-sauce-plate\ 1.png);
+}
+
+section.hero .left {
+    background-color: var(--hero);
+    padding: 3rem;
+    border-radius: 3rem 0 0 3rem;
+    font-family: "Inter", sans-serif;
+}
+
+section.hero .left button {
+    border-radius: 30px;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 21px 40px;
+    margin-bottom: 3rem;
+}
+
+section.hero .left h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+section.hero .left p {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.btn-wrapper {
+    margin-bottom: 4rem;
+}
+
+.btn-wrapper button {
+    background-color: var(--btncolor);
+}
+
+.btn-wrapper button p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.d-flex.align-items-center.justify-content-between {
+    margin-top: 20px;
+}
+
+.date p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.btn-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.date p:first-child {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.date p:nth-child(2) {
+    font-size: 14px !important;
+}
+
+#heroimg {
+    border-radius: 0 3rem 3rem 0;
+}
+
+// Categories section
+.title-holder {
+    margin-bottom: 5rem;
+}
+
+section.categories {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-family: "Inter", sans-serif;
+
+    button {
+        background-color: var(--btncolor);
+        border-radius: 16px;
+        padding: 1rem;
+    }
+}
+
+.wrapper .row .box {
+    width: 180px;
+    height: 202px;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'inter', serif;
+    font-weight: 600;
+}
+
+.wrapper .row .box .parent {
+    width: 100%;
+    height: 152px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+    p {
+        margin-top: 5rem;
+    }
+}
+
+.wrapper .row .box .parent .image img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#breakfast {
+    background: linear-gradient(180deg,
+            rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%)
+}
+
+#vegan {
+    background: linear-gradient(180deg, rgba(108, 198, 63, 0) 0%, rgba(108, 198, 63, 0.1) 100%);
+}
+
+#meat {
+    background: linear-gradient(180deg, rgba(204, 38, 27, 0) 0%, rgba(204, 38, 27, 0.1) 100%);
+}
+
+#desert {
+    background: linear-gradient(180deg, rgba(240, 158, 0, 0) 0%, rgba(240, 158, 0, 0.1) 100%);
+
+}
+
+#lunch {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+
+}
+
+#chocolate {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+
+}
+
+
+// recipes section
+
+section.recipes {
+    font-family: 'inter', serif;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
